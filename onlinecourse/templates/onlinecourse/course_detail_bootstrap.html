@@ -51,6 +51,13 @@
                 {% endfor %}
             </div>
             <!-- Course detail template changes go here -->
+            <div class="container-fluid">
+                {% if user.is_authenticated}
+                    {% for question in course.question_set.all %}
+                        <div class=""></div>
+                    {% endfor %}
+                {% endif}
+            </div>
     </div>
 </body>
 </html>
